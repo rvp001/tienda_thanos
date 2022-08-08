@@ -1,0 +1,49 @@
+GET http://localhost:3000/api/products
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjJlY2MyMWUyMzdlMDMyYWExMWE4OWNjIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNjU5Njg3Nzg0fQ.YyJ1s60KtoTK_Ry5vfT-hgsQfqWBibwEhyZqvXhQv8Q
+
+###
+GET http://localhost:3000/api/products/cart
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjJlY2MyMWUyMzdlMDMyYWExMWE4OWNjIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNjU5Njg3Nzg0fQ.YyJ1s60KtoTK_Ry5vfT-hgsQfqWBibwEhyZqvXhQv8Q
+
+###
+GET http://localhost:3000/api/products/add/62eb845ec82b12ac5faf27ad
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjJlY2MyMWUyMzdlMDMyYWExMWE4OWNjIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNjU5Njg3Nzg0fQ.YyJ1s60KtoTK_Ry5vfT-hgsQfqWBibwEhyZqvXhQv8Q
+
+###
+POST http://localhost:3000/api/products
+Content-Type: application/json
+
+{
+    "name": "Thermomix",
+    "description": "cocina cosas",
+    "price": 990,
+    "department": "cocina",
+    "available": "false",
+    "created_at": "2022-08-04"
+}
+
+###
+GET http://localhost:3000/api/users/profile
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjJlY2MyMWUyMzdlMDMyYWExMWE4OWNjIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNjU5Njg3Nzg0fQ.YyJ1s60KtoTK_Ry5vfT-hgsQfqWBibwEhyZqvXhQv8Q
+
+###
+POST http://localhost:3000/api/users/register
+Content-Type: application/json
+
+{
+    "username": "Raul",
+    "email": "raul@gmail.com",
+    "password": "123",
+    "active": true,
+    "role": "admin"
+}
+
+###
+POST http://localhost:3000/api/users/login
+Content-Type: application/json
+
+{
+    "email": "raul@gmail.com",
+    "password": "123"  
+}
+
